@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Сергей Брюнеткин](https://up.htmlacademy.ru/htmlcss/36/user/2250881).
-* Наставник: `Неизвестно`.
+- Студент: [Сергей Брюнеткин](https://up.htmlacademy.ru/htmlcss/36/user/2250881).
+- Наставник: `Дмитрий Устинов` (https://htmlacademy.ru/profile/ustinov-dmitriy).
 
 ---
 
