@@ -8,7 +8,7 @@
     <header class="'page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img src="#" alt="Логотип Седоны" />
+          <img src="images/brand=sedona.png" alt="Логотип Седоны" />
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -26,14 +26,18 @@
           </li>
         </ul>
       </nav>
+      <section class="additional-navigation">
+        <h2 class="visually-hidden">Навигация пользователя</h2>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
+            <img src="images/icons/search.svg" alt="Иконка поиск" />
             <button name="search">
               <span class="visually-hidden">Поиск</span>
             </button>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <img src="images/icons/heart.svg" alt="Иконка избранное" />
               <span class="visually-hidden">Избранное</span>
               <span class="acounter">12</span>
             </a>
@@ -42,6 +46,7 @@
             <button name="want-to-here">ХОЧУ СЮДА!</button>
           </li>
         </ul>
+      </section>
     </header>
     <main>
       <h1 class="visually-hidden">Страница выбора гостиницы</h1>
@@ -49,12 +54,22 @@
         <h2 class="inner-header-title">Гостиницы Седоны</h2>
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
+            <img
+              src="images/icons/home.svg"
+              alt="Иконка ведущая на главную страницу"
+            />
             <a class="breadcrumbs-link" href="index.html"
               ><span class="visually-hidden">Главная</span>
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <img
+              src="images/icons/bracked-right.svg"
+              alt="Стрелка показывает открытую страницу"
+            />
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Гостиницы</a>
           </li>
         </ol>
       </section>
@@ -93,7 +108,7 @@
               </li>
               <li class="filter-catalog-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fil" />
+                  <input class="control-input" type="checkbox" name="wi-fi" />
                   Wi-Fi
                 </label>
               </li>
@@ -161,24 +176,35 @@
         </form>
       </section>
 
-<section class="filter">
-  <h3 class="results">Найдено гостиниц: 38</h3>
-      <select class="select-control" aria-label="Сортировка">
-
-        <option value="cheap">Сначала дешевые</option>
-        <option value="expensive">Сначала дорогие</option>
-        <option value="popular">Сначала популярные</option>
-      </select>
-      <a href="#" class="button">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a href="#" class="button">
-        <span class="visually-hidden">Крупные значки</span>
-      </a>
-      <a href="#" class="button">
-        <span class="visually-hidden">Показать список</span>
-      </a>
-    </section>
+      <section class="filter">
+        <h3 class="results">Найдено гостиниц: 38</h3>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
+        <a href="#" class="button">
+          <img
+            src="images/icons/list_view-1.svg"
+            alt="Результат поиска в виде карточек"
+          />
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a href="#" class="button">
+          <img
+            src="images/icons/list_view-2.svg"
+            alt="Результат поиска в виде крупных значков"
+          />
+          <span class="visually-hidden">Крупные значки</span>
+        </a>
+        <a href="#" class="button">
+          <img
+            src="images/icons/list_view-3.svg"
+            alt="Результат поиска в виде списка"
+          />
+          <span class="visually-hidden">Показать список</span>
+        </a>
+      </section>
 
       <section class="card">
         <ul class="hotel-card">
@@ -186,8 +212,8 @@
             <a class="hotel-card-link" href="#">
               <img
                 class="hotel-card-image"
-                src="#"
-                alt="Вид на небо через каньон"
+                src="images/Amara_Resort_&_Spa.jpg"
+                alt="Вид на ночное небо через каньон"
               />
               <h3 class="hotel-card-tittle">Amara Resort & Spa</h3>
             </a>
@@ -195,7 +221,7 @@
             <p class="hotel-card-price">От 4000 ₽</p>
             <a class="button" href="#">Подробнее</a>
             <button class="button-favorites">В Избранное</button>
-            <p class="result-hotel-star">
+            <p class="stars stars-4">
               <span class="visually-hidden">4 звезды</span>
             </p>
             <p class="result-hotel-rate">Рейтинг: 8,5</p>
@@ -205,8 +231,8 @@
             <a class="hotel-card-link" href="#">
               <img
                 class="hotel-card-image"
-                src="#"
-                alt="Вид каньона с радугой"
+                src="images/Villas_at_PocoDiablo.jpg"
+                alt="Вид каньон, на фоне каньона красивая радуга"
               />
               <h3 class="hotel-card-tittle">Villas at Poco Diablo</h3>
             </a>
@@ -214,7 +240,7 @@
             <p class="hotel-card-price">От 5000 ₽</p>
             <a class="button" href="#">Подробнее</a>
             <button class="button-favorites">В Избранное</button>
-            <p class="result-hotel-star">
+            <p class="stars stars-4">
               <span class="visually-hidden">4 звезды</span>
             </p>
             <p class="result-hotel-rate">Рейтинг: 9,2</p>
@@ -224,8 +250,8 @@
             <a class="hotel-card-link" href="#">
               <img
                 class="hotel-card-image"
-                src="#"
-                alt="Вид каньона в ясную погоду"
+                src="images/Desert_Quail_Inn.jpg"
+                alt="Красивый каньон в ясную погоду"
               />
               <h3 class="hotel-card-tittle">Desert Quail Inn</h3>
             </a>
@@ -233,7 +259,7 @@
             <p class="hotel-card-price">От 2500 ₽</p>
             <a class="button" href="#">Подробнее</a>
             <button class="button-favorites">В Избранное</button>
-            <p class="result-hotel-star">
+            <p class="stars stars-3">
               <span class="visually-hidden">3 звезды</span>
             </p>
             <p class="result-hotel-rate">Рейтинг: 6,9</p>
@@ -243,8 +269,8 @@
             <a class="hotel-card-link" href="#">
               <img
                 class="hotel-card-image"
-                src="#"
-                alt="Вид каньона на фоне зведного неба"
+                src="images/GreenTree_Inn.jpg"
+                alt="Красивый ночной вид на каньон с зведным небом"
               />
               <h3 class="hotel-card-tittle">GreenTree Inn</h3>
             </a>
@@ -252,7 +278,7 @@
             <p class="hotel-card-price">От 1500 ₽</p>
             <a class="button" href="#">Подробнее</a>
             <button class="button-favorites">В Избранное</button>
-            <p class="result-hotel-star">
+            <p class="stars stars-2">
               <span class="visually-hidden">2 звезды</span>
             </p>
             <p class="result-hotel-rate">Рейтинг: 5,0</p>
@@ -274,18 +300,17 @@
           <a class="pagination-link" href="#">4 </a>
         </li>
       </ol>
+      <section class="subscription">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-text">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <input type="email" placeholder="Ваш e-mail" name="your email" />
+          <input type="submit" value="Подписаться" />
+        </form>
+      </section>
     </main>
-
-    <section class="subscription">
-      <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-      <p class="subscription-text">
-        Только полезная информация и никакого спама, честное бойскаутское!
-      </p>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" placeholder="Ваш e-mail" name="your email" />
-        <input type="submit" value="Подписаться" />
-      </form>
-    </section>
 
     <footer>
       <section class="footer-social">
@@ -293,17 +318,29 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
-              <img class="footer-social-logo" src="#" alt="Vkonatke" />
+              <img
+                class="footer-social-logo"
+                src="images/icons/VK.svg"
+                alt="Иконка соцсети Vkonatke"
+              />
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <img class="footer-social-logo" src="#" alt="Telegram" />
+            <a class="button" href="https://t.me/htmlacademy ">
+              <img
+                class="footer-social-logo"
+                src="images/icons/Telegram.svg"
+                alt="Иконка мессенджераTelegram"
+              />
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="footer-social-logo" src="#" alt="YouTube" />
+              <img
+                class="footer-social-logo"
+                src="images/icons/YouTube.svg"
+                alt="Иконка YouTube"
+              />
             </a>
           </li>
         </ul>
@@ -317,7 +354,11 @@
       <section class="footer-website">
         <h2 class="visually-hidden">Сайт</h2>
         <a class="footer-website-link" href="https://htmlacademy.ru/">
-          <img class="footer-website-logo" src="#" alt="Логотип академии" />
+          <img
+            class="footer-website-logo"
+            src="images/HTML_Academy.svg"
+            alt="Логотип HTML Academy"
+          />
         </a>
       </section>
     </footer>
