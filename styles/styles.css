@@ -43,3 +43,24 @@ text-decoration: none;
 .navigation-list{
   list-style-type: none;
 }
+
+.description-title{
+font-family:"PT Sans", sans-serif;
+font-size: 30px;
+font-weight: 700px;
+line-height: 36px;
+background-color: #ffffff;
+color: #000000;
+text-align: center;
+text-transform: uppercase;
+}
+
+.description-text{
+  font-family:"PT Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400px;
+  line-height: 26px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+}
