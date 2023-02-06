@@ -64,3 +64,28 @@ text-transform: uppercase;
   color: #000000;
   text-align: center;
 }
+.advantages-title{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #000000;
+}
+.advantages-description{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+.advantages-list{
+  list-style-type: none
+}
+.recommend-list{
+  list-style-type: none
+}
