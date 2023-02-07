@@ -182,6 +182,10 @@ color:#ffffff;
   text-align: left;
   color: #ffffff;
   text-decoration: none;
+  list-style-type: none;
+}
+.breadcrumbs-item{
+  list-style-type:none;
 }
 
 .control{
@@ -244,4 +248,68 @@ fieldset{
   text-align: left;
   color: #000000;
   background-color: #ffffff;
+}
+.hotel-card{
+  list-style-type: none;
+}
+
+.hotel-card-link{
+  font-family:"PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700px;
+  line-height: 28px;
+  color: #000000;
+  text-align: left;
+  vertical-align: top;
+  text-decoration: none;
+}
+.hotel-card-type{
+  font-family:"PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 21px;
+  color: #333333;
+  text-align: left;
+  vertical-align: top;
+}
+
+.hotel-card-price{
+  font-family:"PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 21px;
+  color: #333333;
+  text-align: right;
+  vertical-align: top;
+}
+.button-details{
+  font-family:"PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: center;
+  background-color:#756157;
+  text-decoration: none;
+}
+.button-favorites{
+  font-family:"PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: center;
+  background-color:#82B3D3;
+}
+.result-hotel-rate{
+  font-family:"PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  vertical-align: top;
+  background-color:#F2F2F2;
 }
