@@ -13,13 +13,31 @@
   src: url(../fonts/ptsans-700.woff2) format(woff2);
   font-display: wrap;
 }
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main-conteiner {
+  flex-grow: 1;
+}
 
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: ##f2f2f2;
   color: #000000;
+  height: 100%;
 }
 
 /* visually-hiden я скопировал с ретроспективы */
