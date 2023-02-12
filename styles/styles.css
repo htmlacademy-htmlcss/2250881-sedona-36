@@ -18,7 +18,7 @@ html {
   margin: 0;
   padding: 0;
 }
-
+/*
 .conteiner {
   width: 1200px;
   margin: 0 auto;
@@ -27,17 +27,23 @@ html {
   flex-direction: column;
   min-height: 100%;
 }
+*/
 .main-conteiner {
   flex-grow: 1;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: ##f2f2f2;
   color: #000000;
-  height: 100%;
+
+  margin: 0;
+
 }
 
 /* visually-hiden я скопировал с ретроспективы */
@@ -61,6 +67,11 @@ body {
   background-repeat: no-repeat;
 }
 
+.navigation{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -71,6 +82,7 @@ body {
   text-decoration: none;
 }
 .navigation-list {
+
   list-style-type: none;
 }
 
