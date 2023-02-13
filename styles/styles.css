@@ -27,11 +27,11 @@ html {
   flex-direction: column;
   min-height: 100%;
 }
-
+*/
 .main-container {
   flex-grow: 1;
 }
-*/
+
 body {
   display: flex;
   flex-direction: column;
@@ -42,9 +42,8 @@ body {
   background-color: #ffffff;
   color: #333333;
   margin: 0;
-
 }
-
+/*
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -57,27 +56,18 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.page-container{
-  width: 1200px;
-  margin: 0 auto;
-}
-.main-logo{
-  display: block;
-  margin: 0 auto;
+*/
 
-  }
-
-.main-index {
-  background-image: url(../images/mauntain-background.jpg);
-  background-size: 100% auto;
+.page-header {
+  color: #000000;
   background-color: #ffffff;
-  background-repeat: no-repeat;
-}
-
-.navigation{
   display: flex;
   width: 1200px;
   margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
 }
 .navigation-link {
   font-family: "PT Sans", sans-serif;
@@ -91,15 +81,53 @@ body {
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 507px;
+  width: 339px;
   list-style-type: none;
 }
 
-.navigation-user{
-  max-width: 268px;
+.navigation-user {
   margin-left: auto;
+  width: 268px;
+}
+.navigation-button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+}
+.notification-badge {
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  align-items: center;
+  background-color: #7db54f;
 }
 
+/* MAIN*/
+.main-index {
+  background-image: url(../images/mauntain-background.jpg); /* ПОДКЛЮЧИТЬ КАРТИНКУ*/
+  background-size: 100% auto;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  color: #333333;
+}
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main-logo {
+  display: block;
+  margin: 0 auto;
+}
 .description-title {
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
@@ -123,6 +151,16 @@ body {
 .advantages-list {
   text-align: center;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*добавлять background-color and color ??? так же как правильно реализова тьфон, он будет разный и если необходимо добавить еще одну карточку, то фон должен оставть от предыдущей, делаем через псевдо классы?*/
+.advantages-item {
+  width: 400px;
+  min-height: 385px;
+  border: 1px dashed #000000;
 }
 
 .advantages-title {
@@ -146,9 +184,15 @@ body {
 }
 
 .recommend-list {
+  display: flex;
   text-align: center;
   list-style-type: none;
+  background: rgba(131, 179, 211, 0.12);
 }
+.recommend-item-food {
+  background: #ffffff;
+}
+
 .recommend-title {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -190,7 +234,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: #ffffff;
 }
 .subscription-text {
   font-family: "PT sans", sans-serif;
@@ -198,7 +242,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #333333;
+  color: #ffffff;
 }
 .button-subscribe {
   font-family: "PT sans", sans-serif;
@@ -209,6 +253,9 @@ body {
   text-transform: uppercase;
   background-color: #82b3d3;
   color: #ffffff;
+}
+.subscription-form {
+  text-align: center;
 }
 
 .footer-social-list {
