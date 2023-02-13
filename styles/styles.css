@@ -75,11 +75,14 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+  padding: 20px 16px;
 }
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 339px;
+  width: 340px;
   list-style-type: none;
 }
 
