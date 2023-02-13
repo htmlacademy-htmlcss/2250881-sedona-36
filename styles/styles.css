@@ -257,8 +257,19 @@ body {
 .subscription-form {
   text-align: center;
 }
+/*FOOTER*/
+.page-footer {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+}
+.footer-social {
+  width: 142px;
+  margin-right: 236.5px;
+} /*will continue from here*/
 
 .footer-social-list {
+  display: flex;
   text-decoration: none;
 }
 
