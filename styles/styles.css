@@ -28,9 +28,7 @@ html {
   min-height: 100%;
 }
 */
-.main-container {
-  flex-grow: 1;
-}
+
 
 body {
   display: flex;
@@ -110,12 +108,13 @@ body {
 }
 
 /* MAIN*/
-.main-index {
+.main-container {
   background-image: url(../images/mauntain-background.jpg); /* ПОДКЛЮЧИТЬ КАРТИНКУ*/
   background-size: 100% auto;
   background-color: #ffffff;
   background-repeat: no-repeat;
   color: #333333;
+  flex-grow: 1;
 }
 .page-container {
   width: 1200px;
@@ -128,7 +127,7 @@ body {
   display: block;
   margin: 0 auto;
 }
-.description-title {
+.search-title {
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -137,9 +136,10 @@ body {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
-.description-text {
+.search-text {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
@@ -147,6 +147,28 @@ body {
   background-color: #ffffff;
   color: #333333;
   text-align: center;
+}
+.search{
+  padding-top: 96px;
+  padding-bottom: 96px;;
+}
+.search-wrapper {
+  width: 592px;
+  min-height: 214px;
+  margin: 0 auto;
+}
+.search-button{
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756157;
+  border: none;
+  padding: 8px 50px;
 }
 .advantages-list {
   text-align: center;
@@ -156,11 +178,21 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-/*добавлять background-color and color ??? так же как правильно реализова тьфон, он будет разный и если необходимо добавить еще одну карточку, то фон должен оставть от предыдущей, делаем через псевдо классы?*/
-.advantages-item {
-  width: 400px;
-  min-height: 385px;
-  border: 1px dashed #000000;
+
+.advantages-item{
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-item-wide{
+  background-color:#82B3D3;
+  display: flex;
+}
+.advantages-item-wide-reverse{
+  flex-direction: row-reverse;
+}
+.advantages-item-container{
+  width: 230px;
+  min-height: 200px;
+  padding: 90px 85px;
 }
 
 .advantages-title {
@@ -170,7 +202,6 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #ffffff;
   color: #000000;
 }
 .advantages-description {
@@ -179,10 +210,12 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  background-color: #ffffff;
-  color: #000000;
+  color: #333333;
 }
-
+/*проверить теорию*/
+.recommend-container{
+  width: 400px;
+}
 .recommend-list {
   display: flex;
   text-align: center;
@@ -209,17 +242,7 @@ body {
   color: #333333;
 }
 
-.link-search-hotel {
-  font-family: "PT sans", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #756157;
-  color: #ffffff;
-  text-decoration: none;
-}
+
 .subscription {
   background-image: url("../images/background-filter-catalog.jpg");
   background-size: 100% auto;
@@ -255,6 +278,7 @@ body {
   color: #ffffff;
 }
 .subscription-form {
+  display: flex;
   text-align: center;
 }
 /*FOOTER*/
@@ -266,11 +290,12 @@ body {
 .footer-social {
   width: 142px;
   margin-right: 236.5px;
-} /*will continue from here*/
+}
 
 .footer-social-list {
   display: flex;
   text-decoration: none;
+
 }
 
 .footer-phone-link {
