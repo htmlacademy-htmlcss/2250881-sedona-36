@@ -17,6 +17,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2;
 }
 /*
 .container {
@@ -34,12 +35,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  max-width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #ffffff;
   color: #333333;
-  margin: 0;
+  margin: 0 auto;
 }
 /*
 .visually-hidden {
@@ -60,15 +62,23 @@ body {
   color: #000000;
   background-color: #ffffff;
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .navigation {
   display: flex;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  justify-content: space-between;
 }
+
+.navigation-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -84,14 +94,14 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 340px;
   list-style-type: none;
 }
 
 .navigation-user {
   margin-left: auto;
-  width: 268px;
+  width: 350px;
 }
+
 .navigation-button {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -114,7 +124,7 @@ body {
 
 /* MAIN*/
 .main-container {
-  background-image: url(../images/mauntain-background.jpg); /* ПОДКЛЮЧИТЬ КАРТИНКУ*/
+  background-image: url(/images/mauntain-background.jpg);
   background-size: 100% auto;
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -184,26 +194,35 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 
 .advantages-item{
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  min-height: 385px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .advantages-item-wide{
   background-color:#82B3D3;
   display: flex;
+  width: 1200px;
+
 }
 .advantages-item-wide-reverse{
   flex-direction: row-reverse;
 }
 .advantages-item-container{
-  width: 230px;
-  min-height: 160px;
-  padding: 112.5px 85px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .advantages-item-container-wide{
-  width: 230px;
+  width: 400px;
   min-height: 181px;
   padding: 102px 85px;
   text-align: center;
@@ -218,6 +237,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  max-width: 175px;
 }
 
 .advantages-title-wide{
@@ -231,6 +251,7 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
+  max-width: 230px;
 }
 
 .advantages-description-wide{
