@@ -66,6 +66,8 @@ body {
 
 .navigation {
   display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
 .navigation-link {
   font-family: "PT Sans", sans-serif;
@@ -139,7 +141,7 @@ body {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 0;
+  margin-top: 96px;
 }
 
 .search-text {
@@ -152,13 +154,14 @@ body {
   text-align: center;
 }
 .search{
-  padding-top: 96px;
-  padding-bottom: 96px;;
+  width: 1200px;
+  min-height: 406px;
 }
 .search-wrapper {
   width: 592px;
   min-height: 214px;
   margin: 0 auto;
+  padding: 96px 304px;
 }
 .search-button{
   font-family: "PT Sans";
@@ -180,6 +183,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .advantages-item{
@@ -194,9 +198,17 @@ body {
 }
 .advantages-item-container{
   width: 230px;
-  min-height: 200px;
-  padding: 90px 85px;
+  min-height: 160px;
+  padding: 112.5px 85px;
+  text-align: center;
 }
+.advantages-item-container-wide{
+  width: 230px;
+  min-height: 181px;
+  padding: 102px 85px;
+  text-align: center;
+}
+
 
 .advantages-title {
   font-family: "PT Sans", sans-serif;
@@ -207,6 +219,11 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
+.advantages-title-wide{
+  color: #ffffff;
+  text-transform: uppercase;
+}
 .advantages-description {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -214,6 +231,10 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
+}
+
+.advantages-description-wide{
+  color:#ffffff;
 }
 /*проверить теорию*/
 .recommend-container{
@@ -287,20 +308,31 @@ body {
 /*FOOTER*/
 .page-footer {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   width: 1200px;
+  background-color:#ffffff;
 }
 .footer-social {
-  width: 142px;
-  margin-right: 236.5px;
+
 }
 
 .footer-social-list {
   display: flex;
+  flex-direction: row;
   text-decoration: none;
-
+  list-style-type: none;
+  width: 142px;
+  height: 40px;
+  margin-right: 41.5px;
+ }
+.button-social{
 }
 
+.footer-phone{
+  width: 720px;
+  height: 50px;
+}
 .footer-phone-link {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -312,13 +344,27 @@ body {
   text-decoration: none;
 }
 /* Раздел каталог */
-
+.main-inner-container{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
 .filter {
   background-image: url(../images/background-filter-catalog.jpg);
   background-size: 100% auto;
-  background-color: #ffffff;
+  background-color: #333333;
   background-repeat: no-repeat;
   color: #ffffff;
+
+}
+.filter-container{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 412px;
+  margin: 0 auto;
 }
 .inner-header-title {
   font-family: "PT Sans", sans-serif;
@@ -342,7 +388,7 @@ body {
 .breadcrumbs-item {
   list-style-type: none;
 }
-
+/*
 .control {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -352,6 +398,7 @@ body {
   text-align: left;
   vertical-align: top;
 }
+*/
 .filter-catalog-title {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -407,6 +454,36 @@ fieldset {
 .hotel-card {
   list-style-type: none;
 }
+.hotel-card-item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 16px;
+  width: 340px;
+  height: 340px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.hotel-card-image{
+  width: 300px;
+  height: 212px;
+}
+
+.hotel-card-tittle{
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  position: absolute;
+  width: 300px;
+  height: 28px;
+  margin-left: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  }
 
 .hotel-card-link {
   font-family: "PT Sans", sans-serif;
@@ -425,7 +502,8 @@ fieldset {
   line-height: 21px;
   color: #333333;
   text-align: left;
-  vertical-align: top;
+  margin-top: 16px;
+  margin-left: 20px;
 }
 
 .hotel-card-price {
@@ -436,6 +514,9 @@ fieldset {
   color: #333333;
   text-align: right;
   vertical-align: top;
+}
+.card{
+  display: flex;
 }
 .button-details {
   font-family: "PT Sans", sans-serif;
