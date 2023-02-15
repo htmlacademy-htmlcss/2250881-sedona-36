@@ -30,7 +30,6 @@ html {
 }
 */
 
-
 body {
   display: flex;
   flex-direction: column;
@@ -43,7 +42,7 @@ body {
   color: #333333;
   margin: 0 auto;
 }
-/*
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -56,7 +55,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*/
 
 .page-header {
   color: #000000;
@@ -72,7 +70,7 @@ body {
   justify-content: space-between;
 }
 
-.navigation-item{
+.navigation-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,15 +121,23 @@ body {
 }
 
 /* MAIN*/
-.main-container {
+.main-background-image {
   background-image: url(/images/mauntain-background.jpg);
   background-size: 100% auto;
   background-color: #ffffff;
   background-repeat: no-repeat;
   color: #333333;
   flex-grow: 1;
+  width: 1200px;
+  height: 485px;
 }
-.page-container {
+
+.main-logo {
+  position: absolute;
+  padding: 51px 371px 82px 371px;
+}
+
+.main-container {
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -153,6 +159,22 @@ body {
   text-transform: uppercase;
   margin-top: 96px;
 }
+.description-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.description-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
 
 .search-text {
   font-family: "PT Sans", sans-serif;
@@ -163,17 +185,20 @@ body {
   color: #333333;
   text-align: center;
 }
-.search{
-  width: 1200px;
+.search {
+  min-width: 592px;
   min-height: 406px;
 }
 .search-wrapper {
   width: 592px;
   min-height: 214px;
   margin: 0 auto;
-  padding: 96px 304px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
-.search-button{
+.search-button {
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
@@ -194,10 +219,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
-.advantages-item{
+.advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   min-height: 385px;
@@ -205,29 +229,27 @@ body {
   align-items: center;
   justify-content: center;
 }
-.advantages-item-wide{
-  background-color:#82B3D3;
+.advantages-item-wide {
+  background-color: #82b3d3;
   display: flex;
   width: 1200px;
-
 }
-.advantages-item-wide-reverse{
+.advantages-item-wide-reverse {
   flex-direction: row-reverse;
 }
-.advantages-item-container{
+.advantages-item-container {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.advantages-item-container-wide{
+.advantages-item-container-wide {
   width: 400px;
   min-height: 181px;
   padding: 102px 85px;
   text-align: center;
 }
-
 
 .advantages-title {
   font-family: "PT Sans", sans-serif;
@@ -240,7 +262,7 @@ body {
   max-width: 175px;
 }
 
-.advantages-title-wide{
+.advantages-title-wide {
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -254,11 +276,11 @@ body {
   max-width: 230px;
 }
 
-.advantages-description-wide{
-  color:#ffffff;
+.advantages-description-wide {
+  color: #ffffff;
 }
 /*проверить теорию*/
-.recommend-container{
+.recommend-container {
   width: 400px;
 }
 .recommend-list {
@@ -287,13 +309,17 @@ body {
   color: #333333;
 }
 
-
 .subscription {
   background-image: url("../images/background-filter-catalog.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
   text-align: center;
+}
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 .subscription-title {
   font-family: "PT sans", sans-serif;
@@ -332,10 +358,9 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   width: 1200px;
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 .footer-social {
-
 }
 
 .footer-social-list {
@@ -346,11 +371,11 @@ body {
   width: 142px;
   height: 40px;
   margin-right: 41.5px;
- }
-.button-social{
+}
+.button-social {
 }
 
-.footer-phone{
+.footer-phone {
   width: 720px;
   height: 50px;
 }
@@ -365,7 +390,7 @@ body {
   text-decoration: none;
 }
 /* Раздел каталог */
-.main-inner-container{
+.main-inner {
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -375,17 +400,14 @@ body {
 .filter {
   background-image: url(../images/background-filter-catalog.jpg);
   background-size: 100% auto;
-  background-color: #333333;
   background-repeat: no-repeat;
   color: #ffffff;
+  display: flex;
 
 }
-.filter-container{
+.filter-container {
   display: flex;
   flex-direction: column;
-  width: 1200px;
-  min-height: 412px;
-  margin: 0 auto;
 }
 .inner-header-title {
   font-family: "PT Sans", sans-serif;
@@ -394,22 +416,44 @@ body {
   line-height: 78px;
   text-align: left;
   color: #ffffff;
+  position: absolute;
+  margin: 35px 635.6px 299px 70px;
 }
-.breadcrumbs-link {
+
+.filter-container{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding: 0;
+  gap: 32px;
+  margin: 182px 979.73px 73px 70px;
+}
+
+.breadcrunbs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+}
+}
+.breadcrumbs-item {
   font-family: "PT sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   text-align: left;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   list-style-type: none;
 }
-
-.breadcrumbs-item {
+.breadcrumbs-link{
   list-style-type: none;
 }
-/*
+
+
+
 .control {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -475,7 +519,7 @@ fieldset {
 .hotel-card {
   list-style-type: none;
 }
-.hotel-card-item{
+.hotel-card-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -487,12 +531,12 @@ fieldset {
   border-radius: 4px;
 }
 
-.hotel-card-image{
+.hotel-card-image {
   width: 300px;
   height: 212px;
 }
 
-.hotel-card-tittle{
+.hotel-card-tittle {
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 24px;
@@ -504,7 +548,7 @@ fieldset {
   margin-left: 20px;
   margin-top: 16px;
   margin-bottom: 16px;
-  }
+}
 
 .hotel-card-link {
   font-family: "PT Sans", sans-serif;
@@ -536,7 +580,7 @@ fieldset {
   text-align: right;
   vertical-align: top;
 }
-.card{
+.card {
   display: flex;
 }
 .button-details {
