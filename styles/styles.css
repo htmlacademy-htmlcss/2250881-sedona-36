@@ -330,6 +330,10 @@ body {
   justify-content: center;
   margin: 0 auto;
 }
+.subscription-form {
+  display: flex;
+  text-align: center;
+}
 .subscription-title {
   font-family: "PT sans", sans-serif;
   font-weight: 700;
@@ -357,10 +361,7 @@ body {
   background-color: #82b3d3;
   color: #ffffff;
 }
-.subscription-form {
-  display: flex;
-  text-align: center;
-}
+
 /*FOOTER*/
 .page-footer {
   display: flex;
@@ -381,6 +382,18 @@ body {
   height: 40px;
   margin-right: 41.5px;
 }
+
+.subscription-catalog {
+  background-image: none;
+}
+.subscription-title-catalog {
+  color: #000000;
+}
+
+.subscription-text-catalog {
+  color: #333333;
+}
+
 .button-social {
 }
 
