@@ -70,6 +70,10 @@ body {
   justify-content: space-between;
 }
 
+.navigation-logo {
+  margin-left: 70px;
+}
+
 .navigation-item {
   display: flex;
   flex-direction: column;
