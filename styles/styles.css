@@ -126,7 +126,7 @@ body {
 
 /* MAIN*/
 .main-background-image {
-  background-image: url(/images/mauntain-background.jpg);
+  background-image: url(../images/mauntain-background.jpg);
   background-size: 100% auto;
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -319,7 +319,7 @@ body {
 }
 
 .subscription {
-  background-image: url("../images/background-filter-catalog.jpg");
+  background-image: url("../images/Subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -430,9 +430,11 @@ body {
   flex-direction: column;
   height: 412px;
   align-items: flex-start;
-  background-image: url(/images/background-filter-catalog.jpg);
+  background-image: url(../images/background-filter-catalog.jpg);
   background-repeat: no-repeat;
   color: #ffffff;
+  background-size: cover;
+  padding: 35px 70px 70px 70px;
 }
 
 .inner-header-title {
@@ -442,8 +444,13 @@ body {
   line-height: 78px;
   text-align: left;
   color: #ffffff;
-  position: absolute;
-  margin: 35px 635.6px 299px 70px;
+  margin: 0;
+}
+
+.breadcrumbs {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
 .filter-group {
@@ -456,18 +463,25 @@ body {
   margin-top: 40px;
 }
 
+.filter-catalog-list {
+  list-style: none;
+  padding: 0;
+}
+
 .filter-catalog-group-first {
   width: 150.43px;
   height: 157px;
-  padding: o;
+  padding: 0;
   margin-right: 70px;
   gap: 32px;
+  border: none;
 }
 .filter-catalog-group-second {
   width: 150.43px;
   height: 157px;
   padding: o;
   gap: 32px;
+  border: none;
 }
 
 .filter-catalog-title {
@@ -569,23 +583,24 @@ body {
   gap: 20px;
   width: 1060px;
   min-height: 896px;
+  list-style: none;
 }
 
 .card-item {
   padding: 20px;
   gap: 16px;
   width: 340px;
-  height: 438px;
+  min-height: 438px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  margin: 20px;
+  box-sizing: border-box;
 }
 .card:nth-child(3n) {
   margin-right: 0;
 }
 .hotel-card-image {
-  width: 300px;
-  height: 212px;
+  max-width: 100%;
+  height: auto;
   padding: 20px;
 }
 .hotel-card-tittle {
