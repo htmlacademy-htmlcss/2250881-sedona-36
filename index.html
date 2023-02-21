@@ -67,12 +67,14 @@
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <p class="description-title">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </p>
-        <p class="description-text">
-          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-        </p>
+        <div class="description-text-container">
+          <p class="description-title">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </p>
+          <p class="description-text">
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          </p>
+        </div>
 
         <ul class="advantages-list">
           <li class="advantages-item advantages-item-wide">
@@ -181,7 +183,7 @@
       </section>
 
       <section class="search">
-        <h2 class="visually hidden">
+        <h2 class="visually-hidden">
           Кнопка для перехода на страницу поиска отеля
         </h2>
         <div class="search-wrapper">
@@ -196,72 +198,82 @@
         </div>
       </section>
       <section class="subscription">
-        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscription-text">
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <form
-          class="subscription-form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <input type="email" placeholder="Ваш e-mail" name="your-email" />
-          <input class="button-subscribe" type="submit" value="Подписаться" />
-        </form>
+        <h2 class="visually-hidden">Блок подписки на рассылку</h2>
+        <div class="subscription-block-container">
+          <p class="subscription-title">Подпишитесь на рассылку</p>
+          <p class="subscription-text">
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+          <form
+            class="subscription-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <input
+              class="data-input"
+              type="email"
+              placeholder="Ваш e-mail"
+              name="your-email"
+            />
+            <input class="button-subscribe" type="submit" value="Подписаться" />
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button-social" href="https://vk.com/htmlacademy">
-              <img
-                class="footer-social-logo"
-                src="images/icons/VK.svg"
-                alt="Иконка соцсети Vkonatke"
-              />
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button-social" href="https://t.me/htmlacademy ">
-              <img
-                class="footer-social-logo"
-                src="images/icons/Telegram.svg"
-                alt="Иконка мессенджераTelegram"
-              />
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a
-              class="button-social"
-              href="https://www.youtube.com/user/htmlacademyru"
-            >
-              <img
-                class="footer-social-logo"
-                src="images/icons/YouTube.svg"
-                alt="Иконка YouTube"
-              />
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-phone">
-        <h2 class="visually-hidden">Телефон</h2>
-        <a class="footer-phone-link" href="tel:+78128121212"
-          >+7 (812) 812-12-12</a
-        >
-      </section>
-      <section class="footer-website">
-        <h2 class="visually-hidden">Сайт</h2>
-        <a class="footer-website-link" href="https://htmlacademy.ru/">
-          <img
-            class="footer-website-logo"
-            src="images/HTML_Academy.svg"
-            alt="Логотип HTML Academy"
-          />
-        </a>
-      </section>
+      <div class="page-footer-container">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button-social" href="https://vk.com/htmlacademy">
+                <img
+                  class="footer-social-logo"
+                  src="images/icons/VK.svg"
+                  alt="Иконка соцсети Vkonatke"
+                />
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button-social" href="https://t.me/htmlacademy ">
+                <img
+                  class="footer-social-logo"
+                  src="images/icons/Telegram.svg"
+                  alt="Иконка мессенджераTelegram"
+                />
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="button-social"
+                href="https://www.youtube.com/user/htmlacademyru"
+              >
+                <img
+                  class="footer-social-logo"
+                  src="images/icons/YouTube.svg"
+                  alt="Иконка YouTube"
+                />
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-phone">
+          <h2 class="visually-hidden">Телефон</h2>
+          <a class="footer-phone-link" href="tel:+78128121212"
+            >+7 (812) 812-12-12</a
+          >
+        </section>
+        <section class="footer-website">
+          <h2 class="visually-hidden">Сайт</h2>
+          <a class="footer-website-link" href="https://htmlacademy.ru/">
+            <img
+              class="footer-website-logo"
+              src="images/HTML_Academy.svg"
+              alt="Логотип HTML Academy"
+            />
+          </a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
