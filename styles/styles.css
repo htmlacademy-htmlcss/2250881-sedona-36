@@ -220,6 +220,8 @@ body {
   background-color: #ffffff;
   color: #333333;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 54px;
 }
 .search-button {
   font-family: "PT Sans";
@@ -233,6 +235,7 @@ body {
   background-color: #756157;
   border: none;
   padding: 8px 50px;
+  width: 376px;
 }
 .advantages-list {
   text-align: center;
