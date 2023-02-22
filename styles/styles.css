@@ -270,6 +270,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.advantages-item-another-background {
+  background-color: rgba(131, 179, 211, 0.2);
+}
 .advantages-item-container-wide {
   width: 400px;
   min-height: 181px;
@@ -306,17 +309,35 @@ body {
   color: #ffffff;
 }
 /*проверить теорию*/
-.recommend-container {
-  width: 400px;
-}
+
 .recommend-list {
   display: flex;
   text-align: center;
   list-style-type: none;
   background: rgba(131, 179, 211, 0.12);
+  margin: 0 auto;
+  padding: 0;
 }
+
+.recommend-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.recommend-container {
+  margin: 81px 85px;
+}
+
 .recommend-item-food {
   background: #ffffff;
+}
+
+.recommend-image {
+  width: 75px;
+  height: 72px;
 }
 
 .recommend-title {
@@ -326,6 +347,8 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .recommend-text {
   font-family: "PT Sans", sans-serif;
@@ -333,6 +356,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin: 0;
 }
 
 .subscription {
@@ -506,8 +530,12 @@ body {
   display: flex;
   gap: 20px;
   list-style: none;
+  margin: 8px 946px 40px 0px;
+  padding: 0;
+  color: #ffffff;
 }
-
+.filter-container {
+}
 .filter-group {
   display: flex;
   flex-direction: row;
@@ -515,12 +543,12 @@ body {
   padding: 0;
   width: 1060px;
   height: 160px;
-  margin-top: 40px;
 }
 
 .filter-catalog-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .filter-catalog-group-first {
@@ -531,10 +559,16 @@ body {
   gap: 32px;
   border: none;
 }
+
+.infrastructure-container {
+  margin: 0;
+  margin-right: 38.43px;
+}
+
 .filter-catalog-group-second {
   width: 150.43px;
   height: 157px;
-  padding: o;
+  padding: 0;
   gap: 32px;
   border: none;
 }
@@ -544,7 +578,23 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  padding: 0;
+  margin-bottom: 32px;
 }
+
+.type-of-living {
+  margin-right: 9.43px;
+}
+
+.filter-catalog-price {
+  display: flex;
+  align-items: flex-start;
+  border: none;
+  margin-left: 140.15px;
+  margin-right: 70px;
+  padding: 0;
+}
+
 .control-span {
   font-weight: 400;
   font-size: 18px;
@@ -553,10 +603,14 @@ body {
 .control-input-min {
   width: 143px;
   height: 48px;
+  background-color: #f2f2f2;
+  border-radius: 4px 0px 0px 4px;
 }
 .control-input-max {
   width: 143px;
   height: 48px;
+  background-color: #f2f2f2;
+  border-radius: 4px 0px 0px 4px;
 }
 .button-catalog {
   display: flex;
