@@ -52,12 +52,12 @@
         <p class="inner-header-title">Гостиницы Седоны</p>
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <img
-              src="images/icons/home.svg"
-              alt="Иконка ведущая на главную страницу"
-            />
-            <a class="breadcrumbs-link" href="index.html"
-              ><span class="visually-hidden">Главная</span>
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Главная</span>
+              <img
+                src="images/icons/home.svg"
+                alt="Иконка ведущая на главную страницу"
+              />
             </a>
           </li>
           <li class="breadcrumbs-item">
@@ -161,19 +161,21 @@
               <div class="price-container">
                 <fieldset class="filter-catalog-price">
                   <legend class="filter-catalog-title">Стоимость, ₽:</legend>
-                  от
+
                   <input
                     class="control-input-min"
                     type="number"
                     name="min-price"
                     value="0"
+                    placeholder="от"
                   />
-                  до
+
                   <input
                     class="control-input-max"
                     type="number"
                     name="max=price"
                     value="9000"
+                    placeholder="до"
                   />
                 </fieldset>
                 <div class="button-catalog">
@@ -199,6 +201,7 @@
           <div class="control-view-page">
             <a href="#" class="button">
               <img
+                class="control-image"
                 src="images/icons/list_view-1.svg"
                 alt="Результат поиска в виде карточек"
               />
@@ -206,6 +209,7 @@
             </a>
             <a href="#" class="button">
               <img
+                class="control-image"
                 src="images/icons/list_view-2.svg"
                 alt="Результат поиска в виде крупных значков"
               />
@@ -213,6 +217,7 @@
             </a>
             <a href="#" class="button">
               <img
+                class="control-image"
                 src="images/icons/list_view-3.svg"
                 alt="Результат поиска в виде списка"
               />
@@ -324,20 +329,28 @@
             <p class="result-hotel-rate">Рейтинг: 5,0</p>
           </li>
         </ul>
-        <ol class="pagination-current">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1 </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2 </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3 </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4 </a>
-          </li>
-        </ol>
+        <div class="pagination-container">
+          <ol class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ol>
+        </div>
       </section>
 
       <section class="subscription subscription-catalog">
