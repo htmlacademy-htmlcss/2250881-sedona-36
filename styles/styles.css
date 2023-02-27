@@ -71,6 +71,10 @@ body {
   justify-content: space-between;
 }
 
+li:hover .navigation-link {
+  border-bottom: 1px solid #000000;
+}
+
 .navigation-logo {
   margin-left: 70px;
 }
@@ -790,6 +794,10 @@ body {
   display: grid;
   grid-column: 1/-1;
   gap: 20px;
+}
+
+li:hover .button-favorites {
+  background-color: #7db54f;
 }
 
 .button-details {
