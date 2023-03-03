@@ -597,6 +597,14 @@ margin: auto;
   justify-content: center;
 }
 
+.breadcrumbs-link-hotels{
+  padding-left: 28px;
+  background-image: url(/images/icons/bracked-right.svg);
+  background-repeat: no-repeat;
+  background-size: 8px 19.94px;
+  background-position: center left 10px;
+}
+
 .filter-group {
   display: flex;
   flex-direction: row;
