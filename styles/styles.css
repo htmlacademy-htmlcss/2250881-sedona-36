@@ -25,7 +25,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  min-width: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -52,6 +52,9 @@ body {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 70px;
+  width: 1200px;
 }
 
 .navigation {
@@ -63,7 +66,13 @@ body {
 }
 
 .navigation-link-main:hover {
-  border-bottom: 1px solid #000000;
+  right: 16px;
+  left: 16px;
+  bottom: 0;
+  top: 21px;
+  border-bottom: 2px solid #756257;
+  content: "";
+  align-self: stretch;
 }
 
 .navigation-logo {
@@ -94,6 +103,7 @@ body {
 }
 
 .navigation-list {
+  position: ;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -131,6 +141,24 @@ body {
   padding: 8px 34px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.navigation-button:hover {
+  background-color: #615048;
+}
+
+.navigation-button:focus {
+  background-color: #615048;
+}
+
+.navigation-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-buttont:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .notification-badge {
@@ -263,7 +291,24 @@ body {
   width: 376px;
   height: 52px;
   cursor: pointer;
+}
 
+.search-button:hover {
+  background-color: #615048;
+}
+
+.search-button:focus {
+  background-color: #615048;
+}
+
+.search-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-button:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .advantages-list {
@@ -328,11 +373,11 @@ body {
   margin-bottom: 62px;
 }
 
-.advantages-title-wide:before{
+.advantages-title-wide:before {
   content: "";
   position: absolute;
   bottom: -32px;
-  left:50%;
+  left: 50%;
   margin-left: -30px;
   width: 60px;
   height: 2px;
@@ -340,7 +385,7 @@ body {
 
 }
 
-.advantages-title:before{
+.advantages-title:before {
   content: "";
   position: absolute;
   bottom: -32px;
@@ -509,6 +554,24 @@ body {
   cursor: pointer;
 }
 
+.button-subscribe:hover {
+  background-color: #68a2ca;
+}
+
+.button-subscribe:focus {
+  background-color: #68a2ca;
+}
+
+.button-subscribe:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-submit:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
+
 /*FOOTER*/
 .page-footer {
   display: flex;
@@ -517,6 +580,7 @@ body {
   width: 1200px;
   min-height: 50px;
   background-color: #ffffff;
+
 }
 
 .page-footer-container {
@@ -525,6 +589,7 @@ body {
   display: flex;
   align-content: center;
   margin: 40px 70px 30px 70px;
+  flex-grow: 1;
 }
 
 .footer-social-list {
@@ -631,6 +696,25 @@ body {
   color: #ffffff;
   align-items: center;
   justify-content: center;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.breadcrumbs-link:focus {
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  border: none;
+}
+
+.breadcrumbs-link:disabled {
+  color: rgba(255, 255, 255, 0.);
+  border: none;
 }
 
 .breadcrumbs-link-hotels {
@@ -758,6 +842,24 @@ body {
   cursor: pointer;
 }
 
+.button-submit:hover {
+  background-color: #68a2ca;
+}
+
+.button-submit:focus {
+  background-color: #68a2ca;
+}
+
+.button-submit:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-submit:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
+
 .button-reset {
   display: flex;
   justify-content: center;
@@ -775,6 +877,25 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.button-reset:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button-reset:focus {
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+  border: none;
+}
+
+.button-reset:disabled {
+  color: rgba(255, 255, 255, 0.);
+  border: none;
 }
 
 .card {
@@ -812,7 +933,7 @@ body {
   margin-right: 200px;
 }
 
-.select-control {
+/* .select-control {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -828,6 +949,40 @@ body {
   flex-shrink: 0;
   margin: o;
   margin-right: 70px;
+} */
+
+.select-control{
+  width: 100%;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  appearance: none;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 12px 20px;
+  padding-right: 40px;
+  background-image: url(/images/icons/Vector-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.select-control:hover {
+  border-color: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  border-color: 2px solid #3f5e72;
+}
+
+/* .select-control:active {
+  border: 2px solid #3f5e72;
+} */
+
+.select-control:disabled {
+  border: 2px solid #000000;
+  color:#000000;
+  opacity: 0.3;
 }
 
 .control-view-page {
@@ -848,7 +1003,13 @@ body {
   cursor: pointer;
 }
 
-.card-grid-toggle-curent {
+.card-grid-toggle:hover {
+  border-color: #000000;
+}
+.card-grid-toggle:focus {
+  border-color: #68a2ca;
+}
+.card-grid-toggle:active {
   border-color: #000000;
 }
 
@@ -909,13 +1070,15 @@ body {
   gap: 20px;
 }
 
-li:hover .button-favorites {
+.button-favorites:hover {
   background-color: #7db54f;
 }
-li:focus .button-favorites {
+
+.button-favorites:focus {
   background-color: #7db54f;
 }
-li:active .button-favorites {
+
+.button-favorites:active {
   background-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -936,6 +1099,24 @@ li:active .button-favorites {
   height: 36px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.button-details:hover {
+  background-color: #615048;
+}
+
+.button-details:focus {
+  background-color: #615048;
+}
+
+.button-details:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-details:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .button-favorites {
@@ -995,6 +1176,7 @@ li:active .button-favorites {
 .pagination-container {
   display: flex;
   width: 1060px;
+  position: relative;
 }
 
 .pagination {
@@ -1008,10 +1190,31 @@ li:active .button-favorites {
   margin-right: 8px;
 }
 
-
-li:hover .pagination-link {
+.card-grid-toggle-curent{
   background-color: #f2f2f2;
-  color: #000000;
+  color:#000000;
+  }
+
+.pagination-link:hover {
+  background-color: #68a2ca;
+}
+.pagination-link:focus {
+  background-color: #68a2ca;
+}
+.pagination-link:active {
+  background-color: #82b3d3;
+  color: rgba(255. 255. 255 0.3);
+}
+
+.pagination-container::after {
+  content: "";
+  position: absolute;
+  width: 1100px;
+  top: -21px;
+  border: 1px solid #e6e6e6;
+  transform: rotate(180deg);
+  order: 2;
+  margin: 0;
 }
 
 .pagination-link {
