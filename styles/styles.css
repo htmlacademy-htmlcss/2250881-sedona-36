@@ -103,7 +103,6 @@ body {
 }
 
 .navigation-list {
-  position: ;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -132,7 +131,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  display: block;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -532,7 +530,7 @@ body {
 .data-input {
   align-self: stretch;
   flex-grow: 1;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   border: none;
   padding-left: 20px;
   background-color: #f2f2f2;
@@ -549,7 +547,7 @@ body {
   color: #ffffff;
   width: 232px;
   height: 52px;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   border: none;
   cursor: pointer;
 }
@@ -585,7 +583,6 @@ body {
 
 .page-footer-container {
   width: 1060px;
-  margin: 40px 70px 30px 70px;
   display: flex;
   align-content: center;
   margin: 40px 70px 30px 70px;
@@ -595,18 +592,11 @@ body {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  text-decoration: none;
   list-style-type: none;
-  margin-right: 41.5px;
-  min-width: 142px;
+  margin: 0;
+  width: 145px;
 }
 
-.footer-social-item {
-  margin: 0;
-  padding: 0;
-  width: 47.33px;
-  height: 40px;
-}
 
 .subscription-catalog {
   background-image: none;
@@ -618,6 +608,28 @@ body {
 
 .subscription-text-catalog {
   color: #333333;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 40px;
+  color: #83B3D3;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.footer-social-link:hover{
+  color: #68a2ca;
+}
+.footer-social-link:focus{
+  color: #68a2ca;
+}
+.footer-social-link:focus{
+  color: rgba(104, 162, 202, 0.3);
 }
 
 .footer-phone {
@@ -634,7 +646,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-
   padding: 0;
   margin: 5px 160px;
 }
@@ -689,6 +700,25 @@ body {
   padding: 0;
 }
 
+.breadcrumbs-home-link {
+  width: 13px;
+  height: 15px;
+  background-image: url(/images/icons/house.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  width: 8px;
+  height: 11px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url(/images/icons/bracked-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
 .breadcrumbs-link {
   display: flex;
   text-decoration: none;
@@ -717,13 +747,13 @@ body {
   border: none;
 }
 
-.breadcrumbs-link-hotels {
+/* .breadcrumbs-link-hotels {
   padding-left: 28px;
   background-image: url(/images/icons/bracked-right.svg);
   background-repeat: no-repeat;
   background-size: 8px 19.94px;
   background-position: center left 10px;
-}
+} */
 
 .filter-group {
   display: flex;
@@ -803,14 +833,14 @@ body {
   width: 143px;
   height: 48px;
   background-color: #f2f2f2;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .control-input-max {
   width: 143px;
   height: 48px;
   background-color: #f2f2f2;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .button-catalog {
@@ -951,7 +981,7 @@ body {
   margin-right: 70px;
 } */
 
-.select-control{
+.select-control {
   width: 100%;
   font-family: inherit;
   font-size: 18px;
@@ -968,11 +998,13 @@ body {
 }
 
 .select-control:hover {
-  border-color: 2px solid #68A2CA;
+  border-color: #68A2CA;
+  outline: none;
 }
 
 .select-control:focus {
-  border-color: 2px solid #3f5e72;
+  border-color: #3f5e72;
+  outline: none;
 }
 
 /* .select-control:active {
@@ -981,7 +1013,7 @@ body {
 
 .select-control:disabled {
   border: 2px solid #000000;
-  color:#000000;
+  color: #000000;
   opacity: 0.3;
 }
 
@@ -1005,12 +1037,17 @@ body {
 
 .card-grid-toggle:hover {
   border-color: #000000;
+  outline: none;
 }
+
 .card-grid-toggle:focus {
   border-color: #68a2ca;
+  outline: none;
 }
+
 .card-grid-toggle:active {
   border-color: #000000;
+  outline: none;
 }
 
 
@@ -1190,17 +1227,19 @@ body {
   margin-right: 8px;
 }
 
-.card-grid-toggle-curent{
+.card-grid-toggle-curent {
   background-color: #f2f2f2;
-  color:#000000;
-  }
+  color: #000000;
+}
 
 .pagination-link:hover {
   background-color: #68a2ca;
 }
+
 .pagination-link:focus {
   background-color: #68a2ca;
 }
+
 .pagination-link:active {
   background-color: #82b3d3;
   color: rgba(255. 255. 255 0.3);
