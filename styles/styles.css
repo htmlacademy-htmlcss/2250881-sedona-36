@@ -65,26 +65,34 @@ body {
   justify-content: space-between;
 }
 
-.navigation-link-main:hover {
+.navigation-link-main:hover{
+  position: relative;
+}
+
+.navigation-link-main::after {
+  position: absolute;
   right: 16px;
   left: 16px;
   bottom: 0;
-  top: 21px;
-  border-bottom: 2px solid #756257;
+  height: 2px;
+  background-color:#756257;
   content: "";
-  align-self: stretch;
 }
 
 .navigation-logo {
   margin-left: 70px;
 }
 
-.navigation-item {
+.navigation-user-item {
   display: flex;
   position: relative;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+}
+.navigation-user-link{
+  display: block;
+  padding: 22px 12px;
 }
 
 .navigation-item:last-child {
@@ -92,6 +100,7 @@ body {
 }
 
 .navigation-link {
+  display: block;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
