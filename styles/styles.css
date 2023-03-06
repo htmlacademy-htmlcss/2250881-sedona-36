@@ -68,6 +68,10 @@ body {
   position: relative;
 }
 
+.navigation-link-main:hover.navigation-link-main::after{
+  display: block;
+}
+
 .navigation-link-main::after {
   position: absolute;
   right: 16px;
@@ -76,22 +80,15 @@ body {
   height: 2px;
   background-color: #756257;
   content: "";
+  display: none;
 }
 
 .navigation-logo {
+  line-height: 0;
+  position: absolute;
   margin-left: 70px;
 }
 
-.navigation-user-item {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-.navigation-user-link {
-  display: block;
-  padding: 22px 12px;
-}
 
 .navigation-item:last-child {
   margin-right: 70px;
@@ -113,21 +110,36 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-left: 240px;
   padding: 0;
   list-style-type: none;
+
 }
 
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
-  width: 350px;
+  margin: 0;
+  margin-right: 68px;
 }
 
+.navigation-user-item {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+.navigation-user-link {
+  display: block;
+  padding: 22px 12px;
+  line-height: 0;
+}
 .navigation-icon {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: -3px;
   left: 0;
   margin: auto;
 }
@@ -138,7 +150,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
