@@ -72,14 +72,13 @@
             <a class="breadcrumbs-link" href="#">Гостиницы</a>
           </li>
         </ol>
+
         <div class="filter-container">
           <form class="filter-catalog" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="filter-group">
               <div class="filter-catalog-container">
                 <fieldset class="filter-catalog-group-first">
                   <legend class="filter-catalog-title">Инфраструктура:</legend>
                   <ul class="filter-catalog-list">
-                    <div class="infrastructure-container">
                       <li class="filter-catalog-item">
                         <label class="control">
                           <input class="control-input" type="checkbox" name="swimming-pool" checked />
@@ -98,7 +97,6 @@
                           <span class="control-span">Wi-Fi</span>
                         </label>
                       </li>
-                    </div>
                   </ul>
                 </fieldset>
 
@@ -108,42 +106,53 @@
                     <div class="type-of-living">
                       <li class="filter-catalog-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="housing" value="hotel" checked />
-                          <span class="control-span">Гостиница</span>
+                          <input class="control-input" type="radio" name="apartment-type" value="hotel" checked />
+                          <span class="hotel">Гостиница</span>
                         </label>
                       </li>
                       <li class="filter-catalog-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="housing" value="motel" />
+                          <input class="motel" type="radio" name="apartment-type" value="motel" />
                           <span class="control-span">Мотель</span>
                         </label>
                       </li>
                       <li class="filter-catalog-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="housing" value="apartments" />
+                          <input class="apartments" type="radio" name="apartment-type" value="apartments" />
                           <span class="control-span">Апартаменты</span>
                         </label>
                       </li>
                     </div>
                   </ul>
                 </fieldset>
-              </div>
-              <div class="price-container">
+
                 <fieldset class="filter-catalog-price">
                   <legend class="filter-catalog-title">Стоимость, ₽:</legend>
                   <div class="range-container">
-                    <input class="control-input-min" type="number" name="min-price" value="0" placeholder="от" />
-                    <span>от</span>
-
-                    <input class="control-input-max" type="number" name="max=price" value="9000" placeholder="до" />
-                    <span>до</span>
+                    <label class="reange-field-text">
+                      <input class="control-input-min" type="number" name="min-price" value="0" placeholder="от">
+                      <span class="field-text">от</span>
+                    </label>
+                    <label class="field-text">
+                      <input class="control-input-max" type="number" name="max=price" value="9000" placeholder="до">
+                      <span class="field-text">до</span>
+                    </label>
                   </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="right:61px" width="226px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+
                 <div class="button-catalog">
                   <button class="button-submit" type="submit">Применить</button>
                   <button class="button-reset" type="reset">Сбросить</button>
                 </div>
-              </div>
-            </div>
           </form>
         </div>
       </section>
