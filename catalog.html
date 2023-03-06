@@ -63,10 +63,14 @@
         <h2 class="visually-hidden">Список гостиниц с фильтром</h2>
         <p class="inner-header-title">Гостиницы Седоны</p>
         <ol class="breadcrumbs">
-          <li class="breadcrumbs-item">
+          <li class="breadcrumbs-item breadcrumbs-item-home">
             <a class="breadcrumbs-link breadcrumbs-home-link" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <img src="/images/icons/bracked-right.svg" width="8" height="20" alt="Иконка далее">
+            <a class="visually-hidden">Далее</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Гостиницы</a>
@@ -137,9 +141,9 @@
                       <input class="control-input-max" type="number" name="max=price" value="9000" placeholder="до">
                       <span class="field-text">до</span>
                     </label>
-                  </div>
-                  <div class="range-scale">
-                    <div class="range-bar" style="right:61px" width="226px">
+
+                    <div class="range-scale">
+                      <div class="range-bar" style="right:61px" width="226px">
                       <button class="range-toggle toggle-min">
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </button>
@@ -148,7 +152,7 @@
                       </button>
                     </div>
                   </div>
-
+                </fieldset>
                 <div class="button-catalog">
                   <button class="button-submit" type="submit">Применить</button>
                   <button class="button-reset" type="reset">Сбросить</button>

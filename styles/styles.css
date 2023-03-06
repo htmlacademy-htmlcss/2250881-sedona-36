@@ -697,36 +697,34 @@ body {
   display: flex;
   gap: 10px;
   list-style: none;
-  margin: 8px 946px 40px 0;
+  margin: 0;
   padding: 0;
 }
 
-.breadcrumbs-home-link {
+.breadcrumbs-item-home {
   width: 13px;
   height: 15px;
+  /* padding: 0.5px 0.5px 2.5px; */
   background-image: url(/images/icons/house.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.breadcrumbs-item:not(:last-child)::after {
-  width: 8px;
-  height: 11px;
-  margin-left: 10px;
+.breadcrumbs-item {
+  margin-bottom: 43px;
   margin-right: 10px;
-  background-image: url(/images/icons/bracked-right.svg);
-  background-position: center;
+  padding: 2px 0;
+  /* background-image: url(/images/icons/bracked-right.svg); */
+  /* background-position: center;
   background-repeat: no-repeat;
-  content: "";
+  content: ""; */
 }
 
 .breadcrumbs-link {
-  display: flex;
   text-decoration: none;
   font-size: 16px;
+  line-height: 21px;
   color: #ffffff;
-  align-items: center;
-  justify-content: center;
 }
 
 .breadcrumbs-link:hover {
@@ -819,6 +817,7 @@ body {
 
 .range-container {
   display: flex;
+  flex-direction: column;
   align-items: start;
   gap: 2px;
   margin: 0;
@@ -842,12 +841,6 @@ body {
   top: 12px;
   right: 20px;
 }
-
-/* .control-span {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-} */
 
 .control-input-min {
   width: 143px;
@@ -988,14 +981,12 @@ body {
 }
 
 .button-reset {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 50px;
-  gap: 10px;
+  padding: 8px 0;
+  margin: 0 auto;
+  margin-top: 20px;
   width: 191px;
   height: 36px;
-  background-color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
   border-radius: 4px;
   border: none;
   color: #ffffff;
