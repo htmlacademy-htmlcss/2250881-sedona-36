@@ -68,6 +68,10 @@ body {
   position: relative;
 }
 
+.navigation-link-main:hover.navigation-link-main::after {
+  display: block;
+}
+
 .navigation-link-main::after {
   position: absolute;
   right: 16px;
@@ -76,21 +80,13 @@ body {
   height: 2px;
   background-color: #756257;
   content: "";
+  display: none;
 }
 
 .navigation-logo {
+  line-height: 0;
+  position: absolute;
   margin-left: 70px;
-}
-
-.navigation-user-item {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-.navigation-user-link {
-  display: block;
-  padding: 22px 12px;
 }
 
 .navigation-item:last-child {
@@ -113,6 +109,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-left: 240px;
   padding: 0;
   list-style-type: none;
 }
@@ -120,14 +117,27 @@ body {
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
-  width: 350px;
+  margin: 0;
+  margin-right: 68px;
 }
 
+.navigation-user-item {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+.navigation-user-link {
+  display: block;
+  padding: 22px 12px;
+  line-height: 0;
+}
 .navigation-icon {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: -3px;
   left: 0;
   margin: auto;
 }
@@ -138,7 +148,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -705,7 +714,7 @@ body {
   width: 13px;
   height: 15px;
   /* padding: 0.5px 0.5px 2.5px; */
-  background-image: url(/images/icons/house.svg);
+  background-image: url(../images/icons/house.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -753,17 +762,20 @@ body {
   background-size: 8px 19.94px;
   background-position: center left 10px;
 } */
-
+.control-span {
+  gap: 16px;
+}
 .filter-catalog-container {
   display: flex;
-  gap: 70px;
 }
 .filter-catalog-group-first {
+  min-width: 157px;
   border-style: none;
   margin-right: 70px;
   padding: 0;
 }
 .filter-catalog-group-second {
+  min-width: 157px;
   border-style: none;
   margin-right: 140px;
   padding: 0;
@@ -809,26 +821,29 @@ body {
 }
 
 .filter-catalog-price {
+  display: flex;
   border-style: none;
   width: 288px;
   padding: 0;
   margin-right: 70px;
 }
-
-.range-container {
+/* .range-field-text {
+  display: flex;
+} */
+/* .range-container {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 2px;
   margin: 0;
-}
+} */
 
-.reange-field-text {
+.range-field-text {
   position: relative;
   top: 50px;
-  right: 20px;
+  /* right: 20px; */
   transform: translateY(50%);
-  width: 20px;
+  /* width: 20px; */
   height: 24px;
   font-family: inherit;
   font-size: 18px;
@@ -837,21 +852,20 @@ body {
 }
 
 .field-text {
-  position: absolute;
   top: 12px;
   right: 20px;
+  position: absolute;
 }
 
 .control-input-min {
   width: 143px;
+  height: 48px;
   margin: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 20px;
+  padding: 0;
   font: inherit;
   font-weight: 700;
   background-color: #f2f2f2;
-  border-radius: 4px 0, 0, 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .control-input-min:hover {
@@ -864,19 +878,19 @@ body {
 .control-input-min:placeholder-shown {
   background-color: #f2f2f2;
   border: 2px solid#000000;
-  border-radius: 4px, 0, 0, 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .control-input-max {
   width: 143px;
+  height: 48px;
+
   margin: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 20px;
+  padding: 0;
   font: inherit;
   font-weight: 700;
   background-color: #f2f2f2;
-  border-radius: 4px 0, 0, 4px;
+  border-radius: 0 4px 4px 0;
 }
 .control-input-max:hover {
   background: #e6e6e6;
@@ -887,8 +901,9 @@ body {
 .control-input-max:placeholder-shown {
   background-color: #f2f2f2;
   border: 2px solid#000000;
-  border-radius: 4px, 0, 0, 4px;
+  border-radius: 4px 0 0 4px;
 }
+
 .range-scale {
   position: relative;
   height: 4px;
@@ -896,6 +911,7 @@ body {
   margin-top: 36px;
   border-radius: 5px;
 }
+
 .range-toggle {
   position: absolute;
   width: 20px;
@@ -904,14 +920,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.range-toggle {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
 .range-toggle:hover {
   background: #e6e6e6;
 }
@@ -938,7 +947,7 @@ body {
   margin-bottom: 32px;
 }
 .control-input {
-  margin-top: 36px;
+  /* margin-top: 36px; */
 }
 
 .button-catalog {
