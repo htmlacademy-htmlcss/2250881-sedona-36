@@ -68,7 +68,7 @@ body {
   position: relative;
 }
 
-.navigation-link-main:hover.navigation-link-main::after{
+.navigation-link-main:hover.navigation-link-main::after {
   display: block;
 }
 
@@ -88,7 +88,6 @@ body {
   position: absolute;
   margin-left: 70px;
 }
-
 
 .navigation-item:last-child {
   margin-right: 70px;
@@ -113,7 +112,6 @@ body {
   margin-left: 240px;
   padding: 0;
   list-style-type: none;
-
 }
 
 .navigation-user {
@@ -764,16 +762,20 @@ body {
   background-size: 8px 19.94px;
   background-position: center left 10px;
 } */
-
+.control-span {
+  gap: 16px;
+}
 .filter-catalog-container {
   display: flex;
 }
 .filter-catalog-group-first {
+  min-width: 157px;
   border-style: none;
   margin-right: 70px;
   padding: 0;
 }
 .filter-catalog-group-second {
+  min-width: 157px;
   border-style: none;
   margin-right: 140px;
   padding: 0;
@@ -824,14 +826,16 @@ body {
   padding: 0;
   margin-right: 70px;
 }
-
-.range-container {
+.range-field-text {
+  display: flex;
+}
+/* .range-container {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 2px;
   margin: 0;
-}
+} */
 
 .reange-field-text {
   position: relative;
@@ -853,14 +857,13 @@ body {
 
 .control-input-min {
   width: 143px;
+  height: 48px;
   margin: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 20px;
+  padding: 0;
   font: inherit;
   font-weight: 700;
   background-color: #f2f2f2;
-  border-radius: 4px 0, 0, 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .control-input-min:hover {
@@ -873,19 +876,19 @@ body {
 .control-input-min:placeholder-shown {
   background-color: #f2f2f2;
   border: 2px solid#000000;
-  border-radius: 4px, 0, 0, 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .control-input-max {
   width: 143px;
+  height: 48px;
+
   margin: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 20px;
+  padding: 0;
   font: inherit;
   font-weight: 700;
   background-color: #f2f2f2;
-  border-radius: 4px 0, 0, 4px;
+  border-radius: 0 4px 4px 0;
 }
 .control-input-max:hover {
   background: #e6e6e6;
@@ -896,10 +899,8 @@ body {
 .control-input-max:placeholder-shown {
   background-color: #f2f2f2;
   border: 2px solid#000000;
-  border-radius: 4px, 0, 0, 4px;
+  border-radius: 4px 0 0 4px;
 }
-
-
 
 .range-scale {
   position: relative;
@@ -908,8 +909,6 @@ body {
   margin-top: 36px;
   border-radius: 5px;
 }
-
-
 
 .range-toggle {
   position: absolute;
