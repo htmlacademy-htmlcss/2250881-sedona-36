@@ -58,7 +58,7 @@
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-user-item">
+          <li class="navigation-user-item navigation-user-item-home">
             <a class="navigation-user-link" href="#">
               <svg
                 class="navigation-icon"
@@ -200,27 +200,28 @@
 
               <fieldset class="filter-catalog-price">
                 <legend class="filter-catalog-title">Стоимость, ₽:</legend>
-                <label class="range-field-text">
-                  <input
-                    class="control-input-min"
-                    type="number"
-                    name="min-price"
-                    value="0"
-                    placeholder="от"
-                  />
-                  <span class="field-text">от</span>
-                </label>
-                <label class="range-field-text">
-                  <input
-                    class="control-input-max"
-                    type="number"
-                    name="max=price"
-                    value="9000"
-                    placeholder="до"
-                  />
-                  <span class="field-text">до</span>
-                </label>
-
+                <div class="control-imput-container">
+                  <label class="range-field-text">
+                    <input
+                      class="control-input-min"
+                      type="number"
+                      name="min-price"
+                      value="0"
+                      placeholder="от"
+                    />
+                    <span class="field-text">от</span>
+                  </label>
+                  <label class="range-field-text">
+                    <input
+                      class="control-input-max"
+                      type="number"
+                      name="max=price"
+                      value="9000"
+                      placeholder="до"
+                    />
+                    <span class="field-text">до</span>
+                  </label>
+                </div>
                 <div class="range-scale">
                   <button class="range-toggle toggle-min">
                     <span class="visually-hidden"
