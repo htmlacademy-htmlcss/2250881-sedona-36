@@ -439,6 +439,7 @@ body {
 }
 
 .advantages-title-wide:before {
+  position: absolute;
   content: "";
   left: 50%;
   margin-left: auto;
