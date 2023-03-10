@@ -438,7 +438,7 @@ body {
   margin-bottom: 62px;
 }
 
-.advantages-title-wide:before {
+/* .advantages-title-wide:before {
   position: absolute;
   content: "";
   left: 50%;
@@ -446,7 +446,8 @@ body {
   width: 60px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
-}
+  color: #ffffff;
+} */
 
 .advantages-title:before {
   content: "";
@@ -472,7 +473,10 @@ body {
   margin: 0 auto;
   margin-bottom: 62px;
 }
+.advantages-title-wide:before {
 
+  background-color: rgba(255, 255, 255, 0.3);
+}
 .advantages-description {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -480,7 +484,7 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
-  max-width: 230px;
+  max-width: 232px;
   margin: 0;
 }
 
@@ -1037,9 +1041,9 @@ input[type=number] {
   margin-bottom: 32px;
 }
 
-.control-input {
+/* .control-input {
   /* margin-top: 36px; */
-}
+} */
 
 .button-catalog {
   width: 191px;
