@@ -943,6 +943,7 @@ input[type=number] {
   height: 48px;
   margin: 0;
   padding: 0;
+  padding-left: 20px;
   font: inherit;
   font-weight: 700;
   background-color: #f2f2f2;
@@ -971,6 +972,7 @@ input[type=number] {
   height: 48px;
   margin: 0;
   padding: 0;
+  padding-left: 20px;
   font: inherit;
   font-weight: 700;
   background-color: #f2f2f2;
