@@ -15,7 +15,6 @@
 }
 
 html {
-
   height: 100%;
   margin: 0;
   padding: 0;
@@ -128,7 +127,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: 25px;
-
 }
 
 .navigation-user-link {
@@ -179,13 +177,16 @@ body {
   color: #ffffff;
 }
 
-.navigation-user-item-home {
+.navigation-icon-favorite {
   position: relative;
+  right: 5px;
+  bottom: -1px;
 }
 
 .notification-badge {
   position: absolute;
-  top: 14px;
+  top: 9px;
+  left: 8px;
   padding: 5px;
   right: -7px;
   font-size: 10px;
@@ -211,7 +212,7 @@ body {
 .vector {
   width: 1200px;
   height: 57px;
-  margin-top: 428px;
+  margin-top: 430px;
 }
 
 .main-logo {
@@ -243,11 +244,12 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 34px;
-  width: 657px;
+  width: 630px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 69px 285px 25px 285px;
+  margin: 0 auto;
+  margin-top: 69px;
 }
 
 .description-text {
@@ -257,10 +259,36 @@ body {
   text-align: center;
   color: #333333;
   margin: 0;
+  margin-top: 28px;
   margin-right: 274.5px;
   margin-bottom: 69px;
   margin-left: 274.5px;
   min-width: 657px;
+}
+
+.recommend-text-container {
+  margin: 64px 347px;
+}
+
+.recommend-title-main {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  width: 505px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-top: 64px;
+}
+
+.recommend-text-main {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  width: 490px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .search {
@@ -307,7 +335,7 @@ body {
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
-  line-height: 50px;
+  line-height: 36px;
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
@@ -317,8 +345,8 @@ body {
   border: none;
   border-radius: 4px;
   padding: 8px 50px;
-  width: 376px;
-  height: 52px;
+  width: 280px;
+  /* height: 52px; */
   cursor: pointer;
 }
 
@@ -382,10 +410,12 @@ body {
 }
 
 .advantages-item-container-wide {
-  width: 400px;
-  min-height: 181px;
-  padding: 102px 85px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
 }
 
 .advantages-title {
@@ -456,7 +486,12 @@ body {
   text-align: center;
   max-width: 230px;
   margin: 0;
-  margin-top: 62px;
+}
+
+.advantages-picture {
+  display: inline-block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .recommend-list {
@@ -469,14 +504,16 @@ body {
 }
 
 .recommend-item {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   width: 400px;
 }
 
 .recommend-container {
+  display: flex;
+  flex-direction: column;
   margin: 81px 85px;
   width: 230px;
   height: 223px;
@@ -611,6 +648,7 @@ body {
 .page-footer-container {
   width: 1060px;
   display: flex;
+  justify-content: space-between;
   align-content: center;
   margin: 40px 70px 30px 70px;
   flex-grow: 1;
@@ -622,6 +660,7 @@ body {
   list-style-type: none;
   margin: 0;
   width: 145px;
+  padding: 0;
 }
 
 .subscription-catalog {
@@ -669,7 +708,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 40px;
-  line-height: 40px;
+  line-height: 50px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -678,11 +717,19 @@ body {
   margin: 5px 160px;
 }
 
-.footer-website-logo {
+.footer-website-link {
+  display: inline-block;
+  width: 115px;
+  height: 33px;
+  margin: 0;
+  margin-left: 41.5px;
+}
+
+/* .footer-website-logo {
   margin: 0;
   padding: 0;
   margin-left: 41.5px;
-}
+} */
 
 /* Раздел каталог */
 .main-inner {
@@ -733,7 +780,6 @@ body {
   height: 12px;
   padding: 0.5px 0.5px 2.5px;
   background-image: url(../images/icons/house.svg);
-  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: bottom;
   cursor: pointer;
@@ -877,6 +923,7 @@ body {
   border-radius: 4px 0 0 4px;
   outline: none;
   border: none;
+  appearance: none;
 }
 
 .control-input-min:hover {
@@ -1081,7 +1128,6 @@ body {
   margin: 0;
   margin-right: 200px;
 }
-
 
 .select-control {
   width: 100%;
