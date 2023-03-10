@@ -199,6 +199,8 @@ body {
 
 /* MAIN*/
 .main-background-image {
+  position: relative;
+  content: "";
   background-image: url(../images/mauntain-background.jpg);
   background-size: 100% auto;
   background-color: #ffffff;
@@ -208,11 +210,15 @@ body {
   width: 1200px;
   height: 485px;
 }
-
-.vector {
-  width: 1200px;
+.main-background-image::after{
+  position: absolute;
+  content: "";
+  width: 100%;
   height: 57px;
-  margin-top: 430px;
+  left: 0;
+  bottom: -1px;
+  background: url(../images/Vector.svg) no-repeat;
+  z-index: 1;
 }
 
 .main-logo {
@@ -903,13 +909,21 @@ body {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  background-color: rgba(170, 170, 170);
+  background-color: #F2F2F2;
+  color: #000000;
 }
 
 .field-text {
-  top: 12px;
+  top: 50%;
   right: 20px;
   position: absolute;
+  /* transform: translateY(50%); */
+  content: "none";
+  width: 20px;
+  height: 24px;
+  font-family: inherit;
+  line-height: 24px;
+  color: rgba(170, 170, 170);
 }
 
 .control-input-min {
