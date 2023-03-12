@@ -883,10 +883,10 @@ background-image: url(../images/icons/checkbox.svg);
 background-image: url(../images/icons/checked=true.svg);
 }
 
-/* .control-input[type="checkbox"]:focus +
+.control-input[type="checkbox"]:focus +
 .control-mark{
 background-image: url(../images/icons/checked=true.svg);
-} */
+}
 
 .control-input[type='radio']+.control-mark{
 background-image: url(../images/icons/radio=falshe.svg);}
@@ -899,8 +899,8 @@ background-image: url(../images/icons/radio=true.svg);
 /* .control-input[type="radio"]:focus +
 .control-mark{
 background-image: url(../images/icons/radio=focus.svg);
-}
-.control-input[type="radio"]:checked:focus +
+} */
+/* .control-input[type="radio"]:checked:focus +
 .control-mark{
 background-image: url(../images/icons/radio=focus=on.svg);
 } */
