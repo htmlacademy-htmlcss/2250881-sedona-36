@@ -875,6 +875,8 @@ top: 0.1em;
   background-color: #ffffff;
   background-image: url(../images/icons/check-mark.svg);
   background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .control-input[type="checkbox"]:hover +
@@ -921,11 +923,14 @@ left: 1.7em; */
 .control-mark{
 background-image: url(../images/icons/radio=point.svg);
 background-repeat: no-repeat;
+background-position: center;
 }
 
 .control-input[type="radio"]:focus +
 .control-mark{
   box-shadow: 0 0 0 0.1em #83B3D3;
+  background-position: center;
+
 }
 
 .control-input[type="radio"]:checked:focus +
@@ -1246,7 +1251,7 @@ background-color: #ffffff;
 .results {
   font-weight: 700;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 44px;
   text-transform: uppercase;
   color: #000000;
   padding: 0;
@@ -1271,7 +1276,7 @@ background-color: #ffffff;
   background-image: url(/images/icons/Vector-down.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
-  margin-right: 70px;
+  margin-right: 58px;
 }
 
 .select-control:hover {
@@ -1336,12 +1341,14 @@ background-color: #ffffff;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   list-style-type: none;
+  margin-top: -5px;
 }
 
 .card-item {
   display: grid;
   grid-template-columns: 150px 150px;
-  padding: 20px;
+  padding: 18px;
+  padding-top: 20px;
   margin: 0;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
@@ -1355,7 +1362,7 @@ background-color: #ffffff;
 .hotel-card-tittle {
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 22px;
   margin: 0;
   margin-top: 16px;
   color: #000000;
