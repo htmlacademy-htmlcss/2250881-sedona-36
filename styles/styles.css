@@ -775,7 +775,6 @@ body {
   background-repeat: no-repeat;
   color: #ffffff;
   background-size: cover;
-  margin-left: 64px;
   padding: 35px 70px 70px 70px;
 }
 
@@ -838,9 +837,9 @@ body {
   border: none;
 }
 
-/* .control-span {
-  gap: 16px;
-} */
+.control-span {
+  margin-left: -8px;
+}
 
 .filter-catalog-container {
   display: flex;
@@ -849,6 +848,8 @@ body {
 .filter-catalog-group-first {
   min-width: 157px;
   border-style: none;
+  margin: 0;
+  margin-left: 8px;
   margin-right: 70px;
   padding: 0;
 }
@@ -864,7 +865,8 @@ width: 20px;
 height: 20px;
 border-radius:5px;
 background-color: #ffffff;
-margin-left: -2em;
+left: -0.4em;
+top: 0.1em;
 /* box-shadow: 0 0 0 0.1em #ffffff; */
 }
 
@@ -886,6 +888,7 @@ margin-left: -2em;
 
 }
 
+
 .control-input[type="checkbox"]:checked:focus +
 .control-mark{
   box-shadow: 0 0 0 0.1em #83B3D3;
@@ -906,12 +909,20 @@ margin-left: -2em;
 
 .control-input[type='radio']+.control-mark{
 border-radius: 50%;
+/* top: 0.2em;
+left: 1.7em; */
 }
 
 .control-input[type="radio"]:hover +
 .control-mark{
   opacity: 0.6;
 }
+.control-input[type="radio"]:checked +
+.control-mark{
+background-image: url(../images/icons/radio=point.svg);
+background-repeat: no-repeat;
+}
+
 .control-input[type="radio"]:focus +
 .control-mark{
   box-shadow: 0 0 0 0.1em #83B3D3;
@@ -920,10 +931,15 @@ border-radius: 50%;
 .control-input[type="radio"]:checked:focus +
 .control-mark{
   box-shadow: 0 0 0 0.1em #83B3D3;
+  background-image: url(../images/icons/radio=point.svg);
+background-repeat: no-repeat;
+
 }
 
 .filter-catalog-group-second {
-  min-width: 157px;
+  min-width: 150px;
+  margin: 0;
+  margin-left: -6px;
   margin-right: 140px;
   padding: 0;
 }
@@ -934,7 +950,7 @@ border-radius: 50%;
   margin: 0;
 }
 .filter-catalog-item:not(:last-child){
-  padding-bottom: 15px;
+  padding-bottom: 16px;
 }
 
 .filter-catalog-item {
@@ -942,6 +958,7 @@ border-radius: 50%;
   font-weight: 400;
   line-height: 23px;
   color: #ffffff;
+
 }
 
 .filter-catalog-item:hover {
@@ -969,6 +986,7 @@ border-radius: 50%;
   color: #ffffff;
   line-height: 20px;
   margin-bottom: 32px;
+  margin-left: -8px;
 }
 
 .type-of-living {
@@ -978,7 +996,9 @@ border-radius: 50%;
 .control-imput-container {
   display: flex;
   margin: 0;
+  margin-left: -10px;
   padding: 0;
+  gap: 2px;
 }
 .input::-webkit-outer-spin-button,
 .input::-webkit-inner-spin-button {
@@ -1001,7 +1021,7 @@ input[type=number] {
 
 .field-text {
   top: 50%;
-  right: 20px;
+  right: 17px;
   position: absolute;
   /* transform: translateY(50%); */
   content: "none";
@@ -1013,7 +1033,7 @@ input[type=number] {
 }
 
 .control-input-min {
-  width: 143px;
+  width: 123px;
   height: 48px;
   margin: 0;
   padding: 0;
@@ -1042,7 +1062,7 @@ input[type=number] {
 }
 
 .control-input-max {
-  width: 143px;
+  width: 123px;
   height: 48px;
   margin: 0;
   padding: 0;
@@ -1071,9 +1091,10 @@ input[type=number] {
 
 .range-scale {
   position: relative;
-  top: 36px;
+  top: 34px;
   height: 4px;
   background-color: #756157;
+  margin-left: -9px;
   margin-top: 36px;
   border-radius: 5px;
 }
@@ -1110,7 +1131,7 @@ background-color: #ffffff;
 .toggle-max {
   position: absolute;
   top: -8px;
-  right: -8px;
+  right: 0;
   border: none;
 }
 
