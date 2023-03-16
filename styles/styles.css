@@ -226,7 +226,7 @@ body {
   height: 57px;
   left: 0;
   bottom: -1px;
-  background: url(../images/Vector.svg) no-repeat;
+  background: url(../images/white-icon.svg) no-repeat;
   z-index: 1;
 }
 
@@ -568,7 +568,7 @@ body {
 }
 
 .subscription {
-  background-image: url("../images/Subscribe.jpg");
+  background-image: url("../images/subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -1498,7 +1498,7 @@ input[type="number"] {
   opacity: 0.6;
 }
 .control-input[type="radio"]:checked + .control-mark {
-  background-image: url(../images/icons/radio=point.svg);
+  background-image: url(../images/icons/radio-point.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1509,7 +1509,7 @@ input[type="number"] {
 
 .control-input[type="radio"]:checked:focus + .control-mark {
   box-shadow: 0 0 0 0.1em #83b3d3;
-  background-image: url(../images/icons/radio=point.svg);
+  background-image: url(../images/icons/radio-point.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
