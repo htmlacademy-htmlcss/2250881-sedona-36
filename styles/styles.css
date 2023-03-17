@@ -1412,7 +1412,11 @@ input[type="number"] {
   margin-top: 8px;
   padding: 0;
 }
-
+.breadcrumbs-home-link{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
 .breadcrumbs-item-home {
   width: 12px;
   height: 12px;
@@ -1623,7 +1627,12 @@ input[type="number"] {
   background-color: #f2f2f2;
   color: #000000;
 }
-
+.range-field-text-min{
+  border-radius: 4px 0 0 4px;
+}
+.range-field-text-max{
+  border-radius: 0 4px 4px 0;
+}
 .field-text {
   top: 50%;
   right: 17px;
@@ -1938,14 +1947,15 @@ input[type="number"] {
   list-style-type: none;
   margin-top: -5px;
   margin-bottom: -13px;
+  gap: 20px;
 }
 
 .card-item {
   display: grid;
   grid-template-columns: 150px 150px;
-  margin: 18px;
-  margin-top: 20px;
-  margin-bottom: 35px;
+  padding: 18px;
+  padding-top: 20px;
+  padding-bottom: 17px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   gap: 1px;
@@ -2099,7 +2109,7 @@ input[type="number"] {
   display: flex;
   width: 1060px;
   position: relative;
-  margin-top: 17px;
+  margin-top: 30px;
 }
 
 .pagination {
