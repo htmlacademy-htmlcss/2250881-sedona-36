@@ -34,6 +34,7 @@ body {
   color: #333333;
   margin: 0 auto;
 }
+
 .body-container {
   width: 1200px;
   margin: 0 auto;
@@ -166,6 +167,7 @@ body {
 .navigation-icon:active {
   opacity: 0.2;
 }
+
 .navigation-button {
   display: inline-block;
   font-family: "PT Sans", sans-serif;
@@ -232,6 +234,7 @@ body {
   width: 1200px;
   height: 485px;
 }
+
 .main-background-image::after {
   position: absolute;
   content: "";
@@ -484,9 +487,11 @@ body {
   margin: 0 auto;
   margin-bottom: 62px;
 }
+
 .advantages-title-wide:before {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
 .advantages-description {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -624,6 +629,7 @@ body {
 .data-input:hover {
   background-color: #e6e6e6;
 }
+
 .data-input:focus {
   outline: 3px solid #83b3d3;
 }
@@ -747,14 +753,17 @@ body {
   padding: 0;
   margin: 5px 160px 5px 214px;
 }
-.footer-phone-link:hover{
+
+.footer-phone-link:hover {
   color: #68a2ca;
 }
+
 .footer-phone-link:focus {
   color: #68a2ca;
   outline: 2px solid #000000;
   border-radius: 5px;
 }
+
 .footer-phone-link:active {
   color: rgba(104, 162, 202, 0.3);
 }
@@ -770,22 +779,26 @@ body {
 }
 
 
-.htmlacademy-logo:hover{
+.htmlacademy-logo:hover {
   color: #68a2ca;
 }
+
 .htmlacademy-logo:focus {
   color: #68a2ca;
   outline: 2px solid #000000;
   border-radius: 5px;
 }
+
 .htmlacademy-logo:active {
   color: rgba(104, 162, 202, 0.3);
 }
+
 .htmlacademy-logo:focus {
   color: #68a2ca;
   outline: 2px solid #000000;
   border-radius: 5px;
 }
+
 .htmlacademy-logo:active {
   color: rgba(104, 162, 202, 0.3);
 }
@@ -1320,6 +1333,7 @@ input[type="number"] {
   cursor: pointer;
   margin-left: 10px;
 }
+
 .hint-text {
   position: absolute;
   margin: 0;
@@ -1409,6 +1423,18 @@ input[type="number"] {
   cursor: pointer;
 }
 
+.breadcrumbs-item-home:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-item-home:focus {
+  color: #ffffff;
+}
+
+.breadcrumbs-item-home:active {
+  opacity: 0.3;
+}
+
 .breadcrumbs-item {
   margin-bottom: 40px;
   margin-right: 10px;
@@ -1422,17 +1448,15 @@ input[type="number"] {
 }
 
 .breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.6;
 }
 
 .breadcrumbs-link:focus {
-  border: 3px solid #83b3d3;
-  border-radius: 4px;
+  color: #ffffff;
 }
 
 .breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.3);
-  border: none;
+  opacity: 0.3;
 }
 
 .breadcrumbs-link:disabled {
@@ -1456,11 +1480,13 @@ input[type="number"] {
   margin-right: 70px;
   padding: 0;
 }
+
 .control {
   position: relative;
   display: block;
   padding-left: 36px;
 }
+
 .control-mark {
   position: absolute;
   width: 20px;
@@ -1474,6 +1500,7 @@ input[type="number"] {
 .control-input[type="checkbox"]:hover + .control-mark {
   opacity: 0.6;
 }
+
 .control-input[type="checkbox"]:checked + .control-mark {
   background-color: #ffffff;
   background-image: url(../images/icons/check-mark.svg);
@@ -1497,6 +1524,7 @@ input[type="number"] {
 .control-input[type="radio"]:hover + .control-mark {
   opacity: 0.6;
 }
+
 .control-input[type="radio"]:checked + .control-mark {
   background-image: url(../images/icons/radio-point.svg);
   background-repeat: no-repeat;
@@ -1527,6 +1555,7 @@ input[type="number"] {
   padding: 0;
   margin: 0;
 }
+
 .filter-catalog-item:not(:last-child) {
   padding-bottom: 16px;
 }
@@ -1574,14 +1603,17 @@ input[type="number"] {
   padding: 0;
   gap: 2px;
 }
+
 .input::-webkit-outer-spin-button,
 .input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
 .range-field-text {
   position: relative;
   height: 24px;
@@ -1671,6 +1703,7 @@ input[type="number"] {
   margin-top: 36px;
   border-radius: 5px;
 }
+
 .range-bar {
   position: absolute;
   height: 4px;
@@ -2025,9 +2058,11 @@ input[type="number"] {
   border: none;
   cursor: pointer;
 }
+
 .button-favorites.button-favorites-current {
   background-color: #7db54f;
 }
+
 .stars-hotel {
   display: grid;
   gap: 20px;
@@ -2073,10 +2108,12 @@ input[type="number"] {
   list-style-type: none;
   padding: 0;
 }
+
 .pagination-link.pagination-link-current {
   background-color: #f2f2f2;
   color: #000000;
 }
+
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
