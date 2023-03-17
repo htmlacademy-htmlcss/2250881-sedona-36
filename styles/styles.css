@@ -151,8 +151,21 @@ body {
   bottom: 3px;
   left: 0;
   margin: auto;
+  color: #000;
 }
 
+.navigation-icon:hover {
+  opacity: 0.5;
+}
+
+.navigation-icon:focus {
+  opacity: 0.5;
+  outline: none;
+}
+
+.navigation-icon:active {
+  opacity: 0.2;
+}
 .navigation-button {
   display: inline-block;
   font-family: "PT Sans", sans-serif;
@@ -361,7 +374,6 @@ body {
   border-radius: 4px;
   padding: 8px 50px;
   width: 280px;
-  /* height: 52px; */
   cursor: pointer;
 }
 
@@ -765,16 +777,27 @@ body {
   margin: 0;
   margin-top: 4px;
   margin-left: 41.5px;
+  color: #000000;
 }
-.footer-website-link:hover{
+
+
+.htmlacademy-logo:hover{
   color: #68a2ca;
 }
-.footer-website-link:focus {
+.htmlacademy-logo:focus {
   color: #68a2ca;
   outline: 2px solid #000000;
   border-radius: 5px;
 }
-.footer-website-link:active {
+.htmlacademy-logo:active {
+  color: rgba(104, 162, 202, 0.3);
+}
+.htmlacademy-logo:focus {
+  color: #68a2ca;
+  outline: 2px solid #000000;
+  border-radius: 5px;
+}
+.htmlacademy-logo:active {
   color: rgba(104, 162, 202, 0.3);
 }
 
@@ -783,11 +806,11 @@ body {
   z-index: 2;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgb(242 242 242 / 80%);
   display: none;
+
 }
 
 .modal-title {
@@ -804,6 +827,7 @@ body {
 
 .modal {
   position: relative;
+  top: 40em;
   margin: auto;
   padding: 64px 70px;
   background: #fff;
@@ -812,6 +836,7 @@ body {
   width: 717px;
   min-height: 576px;
   box-sizing: border-box;
+
 }
 
 .modal-close-button {
@@ -1246,7 +1271,6 @@ input[type="number"] {
 }
 
 .button-person {
-  margin: 0;
   margin: 14px 10px;
   padding: 0;
   width: 20px;
